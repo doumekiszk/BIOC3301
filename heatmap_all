@@ -1,0 +1,22 @@
+#!/bin/bash --login
+#PBS -l walltime=01:30:00
+#PBS -l select=1:ncpus=32
+#PBS -N heatmap_all
+#PBS -A d411-training
+
+cd $PBS_O_WORKDIR
+
+export TMPDIR=~/qiime_temp
+
+module load miniconda/python2
+
+echo "loading virtualenv"
+
+source activate qiime1
+
+echo "Make Heat Map From OTU Table"
+
+time make_otu_heatmap.py -i ~/core_diversity/taxa_plots/table_mc627_sorted_L2.biom -c SampleNitrogen -o ~/heatmap_all.pdf --suppress_row_clustering --suppress_column_clustering --color_scheme PuBu
+
+source deactivate
+
