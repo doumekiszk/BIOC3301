@@ -16,6 +16,6 @@ source activate qiime1
 
 echo "Core Diversity Analysis"
 
-time core_diversity_analyses.py -i ~/taxonomyfiltered.biom -m ~/2018_02_smb/map.complete.tsv -t ~/SILVA_132_QIIME_release/trees/99/99_otus.tre -o ~/core_diversity_taxafiltered -e 647 -c SampleNitrogen -a -O 16
+time core_diversity_analyses.py -i ~/taxonomyfiltered.biom -m ~/2018_02_smb/map.complete.tsv -t ~/SILVA_132_QIIME_release/trees/99/99_otus.tre -o ~/core_diversity_taxafiltered -e 627 -c SampleNitrogen -a -O 16
 
 source deactivate
