@@ -1,5 +1,6 @@
 # BIOC3301
-Linkage between soil microbial community composition and nitrogen level in Gordon Square
+"Linkage between soil microbial community composition and nitrogen level in Gordon Square"
+
 
 For complete metadata mapping file, consult 2018_02_smb/map.complete.tsv
 
